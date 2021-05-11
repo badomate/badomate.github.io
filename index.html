@@ -441,6 +441,21 @@
         height: auto;
       }
     </style>
+    <style>
+      div.polaroid {
+        width: 65%;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-bottom: 25px;
+        margin: auto;
+      }
+
+      div.container {
+        text-align: center;
+        padding: 10px 20px;
+      }
+    </style>
   </head>
   <body onload="openTab(event, 'home')">
     <div id="wrapper">
@@ -468,7 +483,7 @@
           </li>
           <li>
             <a href="#interju" onclick="openTab(event, 'interju')"
-              >Interjú egy hírességgel</a
+              >Interjú Darányi Kálmánnal</a
             >
           </li>
           <li>
@@ -483,7 +498,7 @@
           </li>
           <li>
             <a href="#zsidotorv" onclick="openTab(event, 'zsidotorv')"
-              >A bal oldal a zsidótörvényekről</a
+              >A baloldal a zsidótörvényekről</a
             >
           </li>
           <li>
@@ -491,7 +506,11 @@
               >Teleki család bemutatása</a
             >
           </li>
-          <li><a href="#about" onclick="openTab(event, 'secret_stuff')">Egy teljesen normális tab</a></li>
+          <li>
+            <a href="#about" onclick="openTab(event, 'secret_stuff')"
+              >Egy teljesen normális tab</a
+            >
+          </li>
         </ul>
       </nav>
       <!-- /#sidebar-wrapper -->
@@ -514,12 +533,26 @@
               <h1>Kezdőlap</h1>
               <br /><br />
 
-              <h2>Készítők:</h2>
-              <h2 style="padding-left:3em"><i>Jámbor Tamara</i></h2><br />
-              <h2 style="padding-left:3em"><i>McFegan Rebecca</i></h2><br />
-              <h2 style="padding-left:3em"><i>Görgei Levente</i></h2><br />
-              <h2 style="padding-left:3em"><i>Farkas Bercel</i></h2><br />
-              <h2 style="padding-left:3em"><i>Badó Máté</i></h2>
+              <h2 style="text-align: left">Készítők:</h2>
+              <h2 style="padding-left: 3em; text-align: left">
+                <i>Jámbor Tamara</i>
+              </h2>
+              <br />
+              <h2 style="padding-left: 3em; text-align: left">
+                <i>McFegan Rebecca</i>
+              </h2>
+              <br />
+              <h2 style="padding-left: 3em; text-align: left">
+                <i>Görgei Levente</i>
+              </h2>
+              <br />
+              <h2 style="padding-left: 3em; text-align: left">
+                <i>Farkas Bercel</i>
+              </h2>
+              <br />
+              <h2 style="padding-left: 3em; text-align: left">
+                <i>Badó Máté</i>
+              </h2>
               <br /><br /><br />
               <h4>
                 <i>
@@ -527,8 +560,9 @@
                   megszerkeszteni a feladatot, ezért mi úgy gondoltuk hogy
                   weblapként mégjobban nézne ki --ez elméletben így is van, ha
                   tudnánk weblapot írni--, emiatt lehet hogy vannak benne kisebb
-                  bug-ok vagy valamelyik képernyőméreten egymásba csúszik 1-2 dolog,
-                  erre főképpp telefonon van esély, gépen elég jól le van tesztelve</i
+                  bug-ok vagy valamelyik képernyőméreten egymásba csúszik 1-2
+                  dolog, erre főképpp telefonon van esély, gépen elég jól le van
+                  tesztelve</i
                 >
               </h4>
               <h5>
@@ -538,7 +572,8 @@
               <br /><br /><br />
               <h4>
                 A válsztott feladatok:
-                 <br> <br>
+                <br />
+                <br />
                 <pre>      1. Egy Trianonról megemlékező cikk</pre>
                 <pre>      2. Plakát a baloldal propagandájának</pre>
                 <pre>      3. Interjú Darányi Kálmánnal</pre>
@@ -547,12 +582,52 @@
                 <pre>      6. A baloldal gondolatai a zsidótörvényekről</pre>
                 <pre>      7. A Teleki család bemutatása</pre>
               </h4>
-             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+              <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
             </div>
 
             <div class="tabcontent" id="trianon">
-              <h3>Ez a trianonos cucc helye</h3>
-               <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+              <h1 style="text-align: center">Trianon</h1>
+
+              <h3 style="text-align: justify">
+                Hazánkat történelme során elszenvedett egyik legtragikusabb
+                eseménye 1920 június 4.-én érte, amikor is a versailles-i
+                Nagy-Trianon palotában aláírtuk az I. Világháborút lezáró
+                békediktátum és ezzel elfogadtuk a történelmi Magyarország
+                felfoghatatlan mértékű megcsonkítását.
+              </h3>
+
+              <table>
+                <tr>
+                  <td style="width: 65%; padding-right: 5%">
+                    <h3 style="text-align: justify">
+                      Elcsatolták az ország területének kétharmadát a
+                      lakosságának több mint fele pedig másik ország polgárává
+                      vált. Az elcsatolt területek közül Csehszlovákia megkapta
+                      a Felvidéket, a Kisalföld északi részét és Kárpátalját,
+                      Romániához hozzákapcsolták egész az alföld pereméig
+                      Erdélyt, a Szerb-Horvát-Szlovén királyság Horvátországot
+                      kaparintotta meg, hazánk területeiből még Ausztria és
+                      Lengyelország is kaparintott meg magának némi területet
+                      hazánkból
+                    </h3>
+                  </td>
+                  <td>
+                    <img src="src/trianon.jpg" width="100%" />
+                  </td>
+                </tr>
+              </table>
+              <h3 style="text-align: justify">
+                „Magyarországon, különösen Budapesten nemcsak a reggel volt
+                borús és szomorú, napközben is gyászoltak az emberek. Az
+                iskolákban és a hivatalokban szünetet rendeltek el, az újságok
+                gyászkeretben jelentek meg, a zászlókat félárbocra eresztették.
+                A boltok közül is csak azok nyitottak ki, amelyek élelmiszert
+                árultak.” írta egy korabeli újság a közhangulatról a
+                békediktátum aláírása után, a Trianon szó nem csak akkor, hanem
+                még napjainkban is egyet jelent az igazságtalansággal és az
+                elkeseredéssel.
+              </h3>
+              <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
             </div>
 
             <div class="tabcontent" id="plakat">
@@ -583,15 +658,7 @@
             <div class="tabcontent" id="interju">
               <h1>Interjú Darányi Kálmánnal</h1>
               <br /><br />
-              <div
-                style="
-                  float: right;
-                  box-sizing: border-box;
-                  width: 25%;
-                  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-                    0 6px 20px 0 rgba(0, 0, 0, 0.19);
-                "
-              >
+              <div style="float: right; box-sizing: border-box; width: 25%">
                 <img
                   src="src/daranyi.jpg"
                   style="
@@ -601,7 +668,7 @@
                     border-radius: 10px;
                   "
                 />
-                 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
               </div>
               <div class="interju-left">
                 <h3 class="font-weight-bold" style="text-align: left">
@@ -743,16 +810,166 @@
                   öcsémre Gyulára.
                 </h5>
               </div>
-               <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+              <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
             </div>
+
             <div class="tabcontent" id="sport">
-              <h3>Ez a sport helye</h3>
-               <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+              <h1>Sportélet a Horthy-korszakban</h1>
+              <br /><br />
+
+              <h3 style="text-align: left">
+                A 19. század végén a legnagyobb közönséget a lóversenyzés és a
+                kerékpározás vonzotta, azonban a századfordulón a foci minden
+                más sportot maga mögé utasított.
+              </h3>
+              <div class="polaroid">
+                <img
+                  src="src/sorba_allo_sportolok.jpg"
+                  alt="sorba álló sportolók"
+                  style="width: 100%"
+                />
+                <div class="container">
+                  <p>
+                    Világbajnoki ezüstérmet nyert a magyar labdarúgó-válogatott
+                    1938-ban.
+                  </p>
+                </div>
+              </div>
+              <br /><br />
+              <h3 style="text-align: left">
+                Az első világháború miatt megritkultak a versenyek, a fiatal
+                sportolókat tömegével sorozták be, sok meghaltak a fronton. A
+                visszaesés azonban csak átmeneti volt. Az 1920-as években a
+                fővárosi labdarúgó csapatok rangadóit és a válogatott
+                mérkőzéseit már 30-40 ezres közönség látogatta.
+              </h3>
+
+              <div class="polaroid">
+                <img src="src/foci.jpg" alt="focimeccs" style="width: 100%" />
+                <div class="container">
+                  <p>
+                    Foci meccs telt lelátókkal, ami napjainkban országunkban már
+                    szokatlan.
+                  </p>
+                </div>
+              </div>
+              <br /><br />
+              <h3 style="text-align: left">
+                Ekkoriban vált sikersporttá Magyarországon a vízilabda, az
+                ökölvívás és a birkózás. Eközben a magyar vívók és úszók
+                továbbra is jól szerepeltek a nemzetközi versenyeken.
+              </h3>
+              <div class="polaroid" style="width: 40%">
+                <img
+                  src="src/csik_ferenc.jpg"
+                  alt="focimeccs"
+                  style="width: 100%"
+                />
+                <div class="container">
+                  <p>Csík Ferenc Úszó, olimpiai bajnok (1936)</p>
+                </div>
+              </div>
+              <br /><br />
+              <h3 style="text-align: left">
+                A magyar sportolók iránti rajongás nem csupán a
+                sportteljesítményeknek szólt, hanem jót tett a nemzettudat
+                számára. Minden nemzetközi siker elégtételt jelentett.
+              </h3>
+              <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
             </div>
 
             <div class="tabcontent" id="diplomacia">
-              <h3>Ez a diplomáciás cucc helye</h3>
-               <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+              <h1><u>A különböző miniszterelnökök külpolitikája</u></h1>
+              <br /><br />
+              <h4 style="text-align: justify; text-indent: 2em">
+                Károlyi Gyula rövid miniszterelnöki időszaka alatt főleg a
+                válság kezelésével és a belőle való kilábalással volt
+                elfoglalva, így a külpolitikai tevékenysége is leginkább ehhez
+                kapcsolódó tevékenységekre korlátozódott, jelentősen nem
+                változtatott az ország kapcsolatain.
+              </h4>
+              <h4 style="text-align: justify; text-indent: 2em">
+                Az utána következő Gömbös Gyula határozott külpolitikai irányt
+                képviselt, már az is sokat elmond, hogy a példaképe Mussolini
+                volt. A gazdaság megerősítése céljából olasz, német és osztrák
+                piacokat keresett a magyar termékeknek. Alapvetően a diplomáciai
+                kapcsolatokat először az osztrákokkal és Olaszországgal
+                javította, de később (a revíziós törekvések támogatásának
+                reményében) közeledett a hitleri Németországhoz is. Tehát a
+                válságkezelés érdekei után/mellett az volt fontos Gömbös
+                kormányának, hogy a diplomáciai kapcsolatait a fő céljuk, a
+                revízió érdekében alakítsa. Így az esetleges támogatók felé
+                húzott (bár gazdasági érdekekből a szovjetekkel is felvették a
+                kapcsolatot), a kisantant országaival pedig nem tudott javítani
+                a diplomáciai viszonyon. Ezek az országok ugyanis magától
+                értetődő, hogy nem nézték jó szemmel Magyarország revíziós
+                törekvéseit.
+              </h4>
+              <h4 style="text-align: justify; text-indent: 2em">
+                Darányi Kálmánt a külpolitikai iránymódosítás szellemében
+                nevezték ki miniszterelnökké. Előtte a németekhez kerültünk a
+                legközelebb, most a jó viszony fenntartása mellett újra
+                közeledett az olaszok, és ami még fontosabb, a nyugati hatalmak
+                felé. Ezzel lényegében elérték, hogy később a revíziós
+                döntéseket a németek támogatása mellett az előző háború győztes
+                hatalmai se ellenezzék. Az Ausztria és Csehszlovákia elleni
+                fellépést sem támogatta a magyar kormány, azonban később
+                belenyugodott a németek akaratába. Az ország még erősebben
+                sodródott a németek irányába. Bizonyos lépések abba az irányba
+                mutattak, hogy Magyarország nem feltétlenül békés úton kívánja
+                elérni a revíziót. Tehát kijelenthetjük, Darányi végül nem olyan
+                irányba mozdította a diplomáciai kapcsolatokat, mint azt a
+                kinevezésekor remélték.
+              </h4>
+              <h4 style="text-align: justify; text-indent: 2em">
+                Imrédy Béla is hasonló elvárásokkal nézett szembe, mint elődje,
+                azt várták tőle, hogy közeledjen a Nyugathoz, miközben a németek
+                revízióhoz szükséges támogatását is megtartja. Angolbarátnak
+                tartották, de ő sem tudott szorosabb diplomáciai kapcsolatokat
+                kialakítani a nyugati hatalmakkal. A monarchia utódállamaival
+                sikerült viszont megegyezni, hogy Magyarország fegyverkezhessen.
+                A kérdés a Csehszlovákiával szembeni fellépés volt. Hitler
+                elvárta volna, hogy a magyarok erőszakosan is fellépjenek vele
+                együtt, azonban a következményektől félve ezt a magyar kormány
+                próbálta elkerülni. Később mégis békés egyeztetésre kerülhetett
+                sor. A nagyhatalmak Magyarországra és Csehszlovákiára bízták a
+                határok átgondolását, azonban a két ország nem tudott
+                megegyezésre jutni. Ezek után (az angolok és a franciák ügytől
+                való távolmaradásának következményeként) az olaszok és a németek
+                döntöttek és az első bécsi döntésben Magyarországnak adták
+                Csehszlovákia magyarlakta területeit.
+              </h4>
+              <h4 style="text-align: justify; text-indent: 2em">
+                A korszak magyar diplomáciai kapcsolatait elsősorban (kis
+                ellensúlyozásoktól eltekintve) a Németországhoz és
+                Olaszországhoz való közeledés jellemezte. Az egyre erősödő német
+                fenyegetés mellett a környező országokkal is sikerült, ha nem is
+                jobb viszonyt létrehozni, de bizonyos ügyekben kompromisszumra
+                jutni. Az egymást követő kormányok legnagyobb külpolitikában
+                elért eredménsyének egyértelműen az tekinthető, hogy a németek
+                támogatását sikerült elnyerni annyira, hogy a számunkra kedvező
+                első bécsi döntés megszülethessen.
+              </h4>
+              <br /><br />
+
+              <h2><u>Általánosságban a diplomáciáról</u></h2>
+              <h4 style="text-align: justify">
+                <ul>
+                  <li>
+                    a diplomácia a kapcsolatok ápolásáról, a különböző
+                    érdekeltségű országok közötti „helyezkedésről” szól
+                  </li>
+                  <li>
+                    egy diplomatának fontos, hogy jól tudjon kommunikálni,
+                    meggyőző legyen és jó emberismerő
+                  </li>
+                  <li>
+                    a más országokkal való viszony kulcsszerepet játszik egy
+                    ország életében
+                  </li>
+                </ul>
+              </h4>
+              <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
             </div>
 
             <div class="tabcontent" id="zsidotorv">
@@ -819,22 +1036,26 @@
                 ami kevesebb befolyáshoz juttatja őket, amit meg egy politikus
                 nyilván el akar kerülni minden áron.
               </h3>
-               <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+              <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
             </div>
 
             <div class="tabcontent" id="teleki">
               <h3>Ez Teleki helye</h3>
-               <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+              <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
             </div>
 
             <div class="tabcontent" id="secret_stuff">
-               <h1 class="kozepre" text>"Titkos" oldal</h1>
+              <h1 class="kozepre" text>"Titkos" oldal</h1>
               <br /><br />
               <h3>
-                Mivel minden weblapra kell valami titkos cucc, ezért ide is raktam, igaz nem titkos, mivel ahhoz nincsnek meg az eszközeim, vagy legalábbis nem tudok róluk
+                Mivel minden weblapra kell valami titkos cucc, ezért ide is
+                raktam, igaz nem titkos, mivel ahhoz nincsnek meg az eszközeim,
+                vagy legalábbis nem tudok róluk
               </h3>
               <h5>
-                (sajnos csak gépen működik, a nyilakkal lehet irányítani és kissebb monitrokon lehet érdemes lekicsinyíteni hogy az egész beleférjen a képernyőbe)
+                (sajnos csak gépen működik, a nyilakkal lehet irányítani és
+                kissebb monitrokon lehet érdemes lekicsinyíteni hogy az egész
+                beleférjen a képernyőbe)
               </h5>
               <br /><br /><br />
               <canvas width="400" height="400" id="game"></canvas>
