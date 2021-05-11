@@ -442,7 +442,7 @@
       }
     </style>
   </head>
-  <body onload="openTab(event, 'about')">
+  <body onload="openTab(event, 'home')">
     <div id="wrapper">
       <div class="overlay"></div>
 
@@ -491,7 +491,7 @@
               >Teleki család bemutatása</a
             >
           </li>
-          <li><a href="#about" onclick="openTab(event, 'about')">Rólunk</a></li>
+          <li><a href="#about" onclick="openTab(event, 'secret_stuff')">Egy teljesen normális tab</a></li>
         </ul>
       </nav>
       <!-- /#sidebar-wrapper -->
@@ -511,21 +511,48 @@
         <div class="container">
           <div class="row">
             <div class="tabcontent" id="home">
-              <h1 class="kozepre" text>Kezdőlap</h1>
+              <h1>Kezdőlap</h1>
               <br /><br />
-              <h3>
-                Nem igazán volt öteletem hogy mit kéne ide rakni, szóval itt van
-                ez
-              </h3>
+
+              <h2>Készítők:</h2>
+              <h2 style="padding-left:3em"><i>Jámbor Tamara</i></h2><br />
+              <h2 style="padding-left:3em"><i>McFegan Rebecca</i></h2><br />
+              <h2 style="padding-left:3em"><i>Görgei Levente</i></h2><br />
+              <h2 style="padding-left:3em"><i>Farkas Bercel</i></h2><br />
+              <h2 style="padding-left:3em"><i>Badó Máté</i></h2>
+              <br /><br /><br />
+              <h4>
+                <i>
+                  Mivel a feladatkiírásban szerepelt hogy lehet weblapszerűen is
+                  megszerkeszteni a feladatot, ezért mi úgy gondoltuk hogy
+                  weblapként mégjobban nézne ki --ez elméletben így is van, ha
+                  tudnánk weblapot írni--, emiatt lehet hogy vannak benne kisebb
+                  bug-ok vagy valamelyik képernyőméreten egymásba csúszik 1-2 dolog,
+                  erre főképpp telefonon van esély, gépen elég jól le van tesztelve</i
+                >
+              </h4>
               <h5>
-                (sajnos csak gépen működik, és a nyilakkal lehet irányítani)
+                (de ettől függetlenül érdemesebb gépen nézni, mivel arra lett
+                terveze)
               </h5>
               <br /><br /><br />
-              <canvas width="400" height="400" id="game"></canvas>
+              <h4>
+                A válsztott feladatok:
+                 <br> <br>
+                <pre>      1. Egy Trianonról megemlékező cikk</pre>
+                <pre>      2. Plakát a baloldal propagandájának</pre>
+                <pre>      3. Interjú Darányi Kálmánnal</pre>
+                <pre>      4. Cikk a korabeli sportról</pre>
+                <pre>      5. A korabeli diplomácia feltérképezése</pre>
+                <pre>      6. A baloldal gondolatai a zsidótörvényekről</pre>
+                <pre>      7. A Teleki család bemutatása</pre>
+              </h4>
+             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             </div>
 
             <div class="tabcontent" id="trianon">
               <h3>Ez a trianonos cucc helye</h3>
+               <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             </div>
 
             <div class="tabcontent" id="plakat">
@@ -556,14 +583,26 @@
             <div class="tabcontent" id="interju">
               <h1>Interjú Darányi Kálmánnal</h1>
               <br /><br />
-
-              <div style="float: right; box-sizing: border-box; width: 25%; padding-left: 5%;" >
+              <div
+                style="
+                  float: right;
+                  box-sizing: border-box;
+                  width: 25%;
+                  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+                    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                "
+              >
                 <img
                   src="src/daranyi.jpg"
-                  style="position: fixed; box-sizing: border-box; width: 20%"
+                  style="
+                    position: fixed;
+                    box-sizing: border-box;
+                    width: 20%;
+                    border-radius: 10px;
+                  "
                 />
+                 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
               </div>
-
               <div class="interju-left">
                 <h3 class="font-weight-bold" style="text-align: left">
                   1.
@@ -704,17 +743,21 @@
                   öcsémre Gyulára.
                 </h5>
               </div>
+               <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             </div>
-
             <div class="tabcontent" id="sport">
               <h3>Ez a sport helye</h3>
+               <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             </div>
 
             <div class="tabcontent" id="diplomacia">
               <h3>Ez a diplomáciás cucc helye</h3>
+               <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             </div>
 
             <div class="tabcontent" id="zsidotorv">
+              <br />
+              <br />
               <h1>
                 Mit gondolhatott a baloldali politika a zsidótörvényekről?
               </h1>
@@ -776,14 +819,25 @@
                 ami kevesebb befolyáshoz juttatja őket, amit meg egy politikus
                 nyilván el akar kerülni minden áron.
               </h3>
+               <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             </div>
 
             <div class="tabcontent" id="teleki">
               <h3>Ez Teleki helye</h3>
+               <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             </div>
 
-            <div class="tabcontent" id="about">
-              <h3>Ez a rólunk rész helye</h3>
+            <div class="tabcontent" id="secret_stuff">
+               <h1 class="kozepre" text>"Titkos" oldal</h1>
+              <br /><br />
+              <h3>
+                Mivel minden weblapra kell valami titkos cucc, ezért ide is raktam, igaz nem titkos, mivel ahhoz nincsnek meg az eszközeim, vagy legalábbis nem tudok róluk
+              </h3>
+              <h5>
+                (sajnos csak gépen működik, a nyilakkal lehet irányítani és kissebb monitrokon lehet érdemes lekicsinyíteni hogy az egész beleférjen a képernyőbe)
+              </h5>
+              <br /><br /><br />
+              <canvas width="400" height="400" id="game"></canvas>
             </div>
           </div>
         </div>
